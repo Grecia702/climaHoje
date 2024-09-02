@@ -47,25 +47,25 @@ async function handleEnterPress(event) {
             setTimeout(() => {
                 switch (getTemp.weather[0].main) {
                     case 'Clear':
-                        image.src = ("/icons/clear.png");
+                        image.src = ("icons/clear.png");
                         break;
                     case 'Rain':
-                        image.src = ("/icons/rainy.png");
+                        image.src = ("icons/rainy.png");
                         break;
                     case 'Thunderstorm':
-                        image.src = ("/icons/storm.png");
+                        image.src = ("icons/storm.png");
                         break;
                     case 'Snow':
-                        image.src = ("/icons/snow.png");
+                        image.src = ("icons/snow.png");
                         break;
                     case 'Mist':
-                        image.src = ("/icons/mist.png");
+                        image.src = ("icons/mist.png");
                         break;
                     case 'Smoke':
-                        image.src = ("/icons/smoke.png");
+                        image.src = ("icons/smoke.png");
                         break;
                     case 'Clouds':
-                        image.src = ("/icons/cloud.png");
+                        image.src = ("icons/cloud.png");
                         break;
                 }
                 weather.classList.remove('active')
