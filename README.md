@@ -1,4 +1,4 @@
-#Clima Hoje
+# Clima Hoje
 
 Um projeto simples de um site que busca dados climáticos de uma API e retorna as informações sobre o tempo da cidade inserida no campo (clima atual, humidade e velocidade do vento)
 
