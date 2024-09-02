@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background: url('weather.jpg') no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(218, 212, 212, 0.151);
+    width: 400px;
+    height: auto;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 30px 0px 30px 0px;
+}
+
+.searchBar {
+    height: 2.5rem;
+    width: 18.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(218, 212, 212, 0.247);
+    border-radius: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.searchBar.input {
+    outline: none;
+    padding: 0;
+    border: none;
+    background-color: rgba(218, 212, 212, 0);
+}
+
+.searchBar.input::placeholder {
+    color: rgb(172, 171, 171);
+}
+
+.searchBar:hover {
+    transform: scale(1.05, 1);
+}
+
+
+.searchBar-icon {
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.weather {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather img {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 30px;
+}
+
+.weather p {
+    line-height: 1.2;
+    font-size: 60px;
+}
+
+.weather .city {
+    font-size: 30px;
+}
+
+.weatherInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: auto;
+
+}
+
+.weatherInfo .infoItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 5px;
+}
+
+.weatherInfo img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.infoSize {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 22px;
+    align-items: center;
+}
+
+.active {
+    display: none;
+}
+
+
+.weather,
+.weatherInfo,
+.error {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.weather.show,
+.weatherInfo.show,
+.error.show {
+    opacity: 1;
+}
