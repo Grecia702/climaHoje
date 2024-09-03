@@ -9,9 +9,7 @@
 }
 
 body {
-    max-height: 100vh;
     min-height: 100vh;
-    
     background: url('weather.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,6 +25,7 @@ body {
     backdrop-filter: blur(20px);
     border-radius: 20px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
@@ -34,25 +33,26 @@ body {
 }
 
 .searchBar {
-    height: 2.5rem;
-    width: 18.5rem;
+    height: 40px;
+    width: 80%;
     border: 1px solid rgb(255, 255, 255);
     background-color: rgba(218, 212, 212, 0.247);
     border-radius: 30px;
-    padding: 0 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     transition: .3s;
+    box-sizing: border-box;
 }
 
 .searchBar.input {
+
     outline: none;
     padding: 0;
     border: none;
     background-color: rgba(218, 212, 212, 0);
 }
+
 
 .searchBar.input::placeholder {
     color: rgb(172, 171, 171);
@@ -67,6 +67,17 @@ body {
     margin-left: 10px;
     width: 32px;
     height: 32px;
+}
+
+@media (max-width: 720px) {
+    .searchBar {
+        padding: 0 10px;
+    }
+
+    .searchBar-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .weather {
