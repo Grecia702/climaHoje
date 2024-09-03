@@ -17,32 +17,37 @@
             <img src="icons/search.png" alt="" class="searchBar-icon">
         </div>
 
-        <div class="weather active" id="weather">
-            <img src="" alt="" id="teste" class="img">
-            <p id="weather-temp"></p>
-            <p id="weather-city" class="city"></p>
-        </div>
-
-        <div class="weatherInfo active" id="weatherInfo">
-            <div class="infoItem">
-                <img id="humidity_percentage" src="icons/humidity_percentage.png" alt="" class="img">
-                <div>
-                    <p class="infoSize" id="humidity">66%</p>
-                    <p>Umidade</p>
-                </div>
+        <div class="weatherCast active" id="weatherCast">
+            <div class="weather" id="weather">
+                <img src="" alt="Clima atual" id="weatherIcons" class="img">
+                <p id="weather-temp"></p>
+                <p id="weather-city" class="city"></p>
             </div>
-            <div class="infoItem">
-                <img src="icons/wind.png" alt="" class="">
-                <div>
-                    <p class="infoSize" id="windSpeed"></p>
-                    <p>Velocidade do vento</p>
+
+            <div class="weatherInfo" id="weatherInfo">
+                <div class="infoItem">
+                    <img id="humidity_percentage" src="icons/humidity_percentage.png" alt="porcentagem de umidade"
+                        class="img">
+                    <div>
+                        <p class="infoSize" id="humidity"></p>
+                        <p>Umidade</p>
+                    </div>
                 </div>
+
+                <div class="infoItem">
+                    <img src="icons/wind.png" alt="" class="">
+                    <div>
+                        <p class="infoSize" id="windSpeed"></p>
+                        <p>Velocidade do vento</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="error active" id="error">
             <p>Cidade não encontrada!</p>
-            <img src="icons/580185.png" width="200px" alt="" id="error">
+            <img src="icons/580185.png" width="200px" alt="Cidade não encontrada" id="error">
         </div>
 
 
