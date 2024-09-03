@@ -10,8 +10,9 @@
 
 body {
     max-height: 100vh;
+    min-height: 100vh;
+    
     background: url('weather.jpg') no-repeat;
-
     background-size: cover;
     background-position: center;
     display: flex;
